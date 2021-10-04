@@ -14,19 +14,19 @@ class CommandBuilder:
         self.pwd: str = ""
         self.pdf: str = ""
 
-    def getUrl(self):
+    def getUrl(self) -> str:
         return self.url
 
-    def getPath(self):
+    def getPath(self) -> str:
         return self.path
 
-    def getUsername(self):
+    def getUsername(self) -> str:
         return self.username
 
-    def getPwd(self):
+    def getPwd(self) -> str:
         return self.pwd
 
-    def getPdf(self):
+    def getPdf(self) -> str:
         return self.pdf
 
     def setUrl(self, newUrl: str):
@@ -47,10 +47,10 @@ class CommandBuilder:
         '''
         self.pdf = " - A *pdf " if toAdd else self.pdf
 
-    def returnCommand(self):
+    def returnCommand(self) -> str:
         return self.command + self.getPdf() + self.getUsername() + self.getPwd() + self.getUrl() + "-P" + self.getPath()
 
-    def returnTestCommand(self):
+    def returnTestCommand(self) -> str:
         '''  Works on mac, not sure windows '''
         return " ls -la " + self.getPdf() + self.getUsername() + self.getPwd() + self.getUrl() + self.getPath()
 
