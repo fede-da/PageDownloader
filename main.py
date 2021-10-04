@@ -5,7 +5,7 @@ import CommandBuilder
 Build UI
 
 '''
-cb = CommandBuilder.CommandBuilder()
+cb: CommandBuilder = CommandBuilder.CommandBuilder()
 
 '''
 Some operations :
