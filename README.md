@@ -6,7 +6,7 @@ Sorry for all the chaos in project folder but I'm too lazy, by the way if someon
 Requirements:
 - Recent version of Python3 installed (I used 3.10.0rc2 but it's optional)
 
-Additional step for Linux users :
+Additional step for Linux users ->
 MacOS and Windows python versions have Tkinter embedded, you probably not so :
 - sudo apt-get install python3-tk (since u're using linux you already know )
 
