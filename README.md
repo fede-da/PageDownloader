@@ -24,6 +24,7 @@ Potete anche lanciare direttamente l'eseguibile "main" se avete Mac o linux ma d
 - chmod +x main
  Et voilà, la grafica se lo lanciate da terminale forse è un po' peggio. Fate come preferite.
 
+P.S. : Non ho fantasia di riorganizzare le cartelle, so che fa schifo così ma capitemi.
 
 
 ## ENG
