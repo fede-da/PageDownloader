@@ -1,15 +1,4 @@
-import os
-import CommandBuilder
-'''
+from gui import Gui
 
-Build UI
-
-'''
-cb: CommandBuilder = CommandBuilder.CommandBuilder()
-
-'''
-Some operations :
-all CommandBuilder methods must be invoked in UI
-'''
-
-os.system(cb.returnTestCommand())
+myGui: Gui = Gui()
+myGui.run()
