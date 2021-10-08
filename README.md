@@ -1,4 +1,23 @@
 # PageDownloader
+## ITALIANO 
+Scarica tutto il contenuto disponibile su una pagina web (no video di solito)
+
+Se avete Windows tutto apposto vi basta un versione recente di python installata (io avevo la 3.10.0rc2).
+
+Se avete un Mac dovete fare da terminale :
+- " pip3 install tkmacosx " ed usare la versione dell'interprete sul quale avete installato il pacchetto ( se non avete scaricato più versioni di python tutto apposto)
+
+Se avete Linux (generico) vi potrebbe mancare la libreria di tkinter quindi:
+- sudo apt-get install python3-tk 
+
+La grafica è molto intuitiva :
+- Scegliete una cartella dove salvare i file (ad esempio Uni->esami->EsameX).
+- Dategli l'url della pagina interessata nella riga sotto
+- Alcuni per scaricare i file chiedono username e password ma sono opzionali
+- In ultimo dovete scegliere se scaricare la singola pagina o tutto. Io vi consiglio tutto perchè l'altra potrebbe non funzionare correttamente per alcuni siti ma fate delle prove.
+
+
+## ENG
 Downloads all available files on web page
 
 Sorry for all the chaos in project folder but I'm too lazy, by the way if someone will join the project I ensure you I will organize it better :)
