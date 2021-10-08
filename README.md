@@ -13,7 +13,7 @@ MacOS and Windows python versions have Tkinter embedded, you probably not so :
 Only MacOS users :
 - pip3 install tkmacosx (Dark mode can break Tkinter library, this extension will fix)
 
-This program will download all avaible files on a web page in your desired folder.
+This program will download all avaible files on a web page inside your desired folder.
 
 Usage:
 - Pick-A-Folder on your desktop (for example : Exams -> A )
