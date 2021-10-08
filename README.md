@@ -16,8 +16,8 @@ Only MacOS users :
 This program will download all avaible files on a web page inside your desired folder.
 
 Usage:
-- Pick-A-Folder on your desktop (for example : Exams -> A )
-- Copy-paste the URL of the desired web page ("A" course web page with all pdf files)
+- Pick-A-Folder using button or writing 
+- Copy-paste the URL of the desired web page (web page with all pdf files)
 - Username and password optionals (sometimes are needed)
 - Pick "single page" or "All pages" on your needs (sometimes "single page" can be lazy so
   if you don't find what you're looking for in your folder try with "All pages"
