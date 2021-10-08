@@ -16,6 +16,15 @@ La grafica è molto intuitiva :
 - Alcuni per scaricare i file chiedono username e password ma sono opzionali
 - In ultimo dovete scegliere se scaricare la singola pagina o tutto. Io vi consiglio tutto perchè l'altra potrebbe non funzionare correttamente per alcuni siti ma fate delle prove.
 
+Per eseguire:
+- Andate nella cartella del progetto da terminale e "python3 main.py"
+
+Potete anche lanciare direttamente l'eseguibile "main" se avete Mac o linux ma dovete prima dare i permessi :
+- Sempre da terminale andate nella cartella del progetto
+- chmod +x main
+ Et voilà, la grafica se lo lanciate da terminale forse è un po' peggio. Fate come preferite.
+
+
 
 ## ENG
 Downloads all available files on web page
