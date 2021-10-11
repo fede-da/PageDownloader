@@ -13,7 +13,7 @@ Specific installations :
 - Linux :
 - - Probably you're missing some tk libraries so -> sudo apt-get install python3-tk python-tk
 
-- Windows: <!-- Could not work at all so just come back later-->
+- Windows: ( Could not work at all so just come back later )
 - - If you run into an issue while launching the app you need to reinstall python and be sure that you're installing tcl-tk libraries. -> https://stackoverflow.com/questions/20044559/how-to-pip-or-easy-install-tkinter-on-windows
 
 
