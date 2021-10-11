@@ -8,8 +8,7 @@ class Flags:
 
     def __init__(self, tk: Tk, r: int, c: int):
         Label(tk, text="Download").grid(row=r, column=c)
-        self.v = StringVar(tk, "EMPTY")
-        self.v.set("EMPTY")
+        self.v = StringVar(tk, "-r")
         modes = [
             ("This page", "EMPTY"),
             ("All pages", "-r")

@@ -1,6 +1,8 @@
 import os
 import platform
 from tkinter.constants import END
+
+from eventHandler import EventHandler
 if platform.system() == "Darwin":
     from tkmacosx import Button
 else:
@@ -67,4 +69,4 @@ class Gui:
 
     def runCommand(self):
         self.cb.setCommands(self.getCommands())
-        self.cb.run()
+        EventHandler(self.cb.run())

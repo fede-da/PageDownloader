@@ -1,24 +1,33 @@
-import os
+import tkinter as tk
+from tkinter.constants import ANCHOR, CENTER
 
 
 class EventHandler:
 
-    def __init__(self, s: int):
-        print("Valore di ritorno della wget: "+str(s))
-        self.showCompleted() if s == 0 or s == 2048 else self.showError()
+    def __init__(self, status: int):
+        print("wget returned : "+str(status))
+        self.report(status)
 
-    def showError(self):
-        body_Str = "Errore durante esecuzione, ricontrolla i dati"
+    def report(self, status: int):
+        win = tk.Toplevel()
+        win.wm_title("Report")
+        win.config(height=100, width=230)
+        win.minsize(230, 100)
+        win.resizable(False, False)
+        textToShow = self.checkStatusValue(status)
 
-        title_Str = "Report :"
+        l = tk.Label(win, text=textToShow)
+        l.pack()
 
-        os.system("osascript -e \'Tell application \"System Events\" to display dialog \"" +
-                  body_Str+"\" with title \""+title_Str+"\"\'")
+        b = tk.Button(win, text="Okay", command=win.destroy)
+        b.pack()
 
-    def showCompleted(self):
-        body_Str = "Nessun problema!"
-
-        title_Str = "Download riuscito"
-
-        os.system("osascript -e \'Tell application \"System Events\" to display dialog \"" +
-                  body_Str+"\" with title \""+title_Str+"\"\'")
+    def checkStatusValue(self, status: int) -> str:
+        if status == 0 or status == 2048:
+            return "Completed!"
+        elif status == 2:
+            return "Aborted by user"
+        elif status == 512 or status == 256:
+            return "Check text fields"
+        else:
+            return "Generic error"

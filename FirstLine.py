@@ -18,7 +18,7 @@ class FirstLine:
 
     def __init__(self, tk: Tk, w: int):
         self.textField = Entry(tk, width=w, bg='#dfdfdf', fg='black')
-        self.label = Label(tk, text="Dove vuoi scaricare i file?")
+        self.label = Label(tk, text="Destination folder")
         self.browseButton = Button(
             tk, text="Browse files", bg='#156fcf', fg='white', command=self.browseFiles)
 
@@ -26,11 +26,6 @@ class FirstLine:
         self.label.grid(row=1, column=0)
         self.browseButton.grid(row=1, column=2)
         return
-
-    def leggiTesto(self):
-        messagebox.showinfo(
-            title="Hai scritto :", message=self.textField.get())
-        self.textField.delete("0", END)
 
     def browseFiles(self) -> None:
         self.textField.delete("0", END)

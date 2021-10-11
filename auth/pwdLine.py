@@ -1,7 +1,6 @@
 
 import os
-from tkinter import Entry, Label, Button, Tk, messagebox
-from tkinter import filedialog
+from tkinter import Entry, Label, Tk
 from tkinter.constants import END
 
 

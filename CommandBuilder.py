@@ -1,8 +1,9 @@
 from eventHandler import EventHandler
 import os
+import tk
 os.environ['PATH'] = '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin' + \
     os.environ['PATH']
-'''La riga sopra perchè py2app se ne frega delle variabili di ambiente'''
+'''Above for py2app if needed'''
 
 
 class CommandBuilder:
@@ -86,9 +87,9 @@ class CommandBuilder:
     def printCommand(self):
         print(self.returnCommand())
 
-    def run(self):
+    def run(self) -> int:
         self.printCommand()
-        EventHandler(os.system(self.returnCommand()))
+        return os.system(self.returnCommand())
 
     def setTestCommands(self, lista: list) -> None:
         self.setPath(lista[0])

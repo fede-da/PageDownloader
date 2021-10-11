@@ -1,7 +1,5 @@
 
-import os
-from tkinter import Entry, Label, Button, Tk, messagebox
-from tkinter import filedialog
+from tkinter import Entry, Label, Tk
 from tkinter.constants import END
 
 
@@ -15,7 +13,7 @@ class UserLine:
         self.isEnabled = value
         self.textField = Entry(tk, width=w, state=value,
                                bg='#dfdfdf', fg='black')
-        self.label = Label(tk, text="Username/email")
+        self.label = Label(tk, text="Username")
 
         self.textField.grid(row=textRow, column=aCol+1, sticky="ew")
         self.label.grid(row=textRow, column=aCol)

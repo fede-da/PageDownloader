@@ -12,7 +12,7 @@ class Enabler:
     pl: PwdLine
 
     def __init__(self, tk: Tk, r: int, c: int, userLine: UserLine, pwdLine: PwdLine):
-        Label(tk, text=" username/email and password?").grid(row=r, column=c)
+        Label(tk, text=" username and password?").grid(row=r, column=c)
         self.ul = userLine
         self.pl = pwdLine
         self.v = StringVar(tk, "disabled")
