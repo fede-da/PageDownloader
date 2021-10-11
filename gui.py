@@ -53,7 +53,7 @@ class Gui:
         self.tk.title("PageDownloader")
         self.tk.eval('tk::PlaceWindow . center')
         window_width = 700
-        window_height = 300
+        window_height = 220
         self.tk.minsize(window_width, window_height)
         self.tk.resizable(False, False)
 
