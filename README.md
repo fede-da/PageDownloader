@@ -24,3 +24,4 @@ Usage :
 - If username and password are required you can add them, but default is "No"
 - I suggest you to check "All pages" because sometimes Web sites can be tricky.
 
+If you like the project feel free to join me.
