@@ -3,7 +3,7 @@ Downloads all available files on web page
 
 REQUIREMENTS:
 - Recent python3 version installed, this program uses 3.9.7
-- Tkinter library installed.
+- Tkinter library installed (usually embedded, skip this step).
 
 Specific installations :
 - MacOS :
