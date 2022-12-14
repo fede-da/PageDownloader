@@ -1,4 +1,8 @@
 # PageDownloader
+
+OUTDATED
+
+#######
 Downloads all available files on web page
 
 REQUIREMENTS:
